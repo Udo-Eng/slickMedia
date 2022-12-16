@@ -1,0 +1,30 @@
+.movieitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+  border-radius: 12px;
+}
+
+.movieitem p {
+  font-family: "DM Sans";
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+@media only screen and (max-width: 378) {
+  .movieitem p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .movieitem{
+    width: 200px;
+    height: 200px;
+  }
+}

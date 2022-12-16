@@ -1,0 +1,74 @@
+.hero {
+  width: 100%;
+  height: 667px;
+  margin-top: 138px;
+  background-image: url(../../assets/cinema.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.innerContainer {
+  position: relative;
+}
+
+.heroText {
+  position: absolute;
+  width: 400px;
+  height: 282px;
+  left: 77px;
+  top: 107px;
+  font-family: "DM sans";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 94px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 834px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .innerContainer {
+    position: static;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroText {
+    position: static;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .hero {
+    margin-top: 68px;
+    height: 257px;
+  }
+
+  .innerContainer {
+    position: static;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroText { 
+    position: static;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    width: 270px;
+    height: 72px;
+  }
+}
